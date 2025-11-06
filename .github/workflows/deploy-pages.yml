@@ -1,0 +1,35 @@
+name: Build e Deploy Angular para GitHub Pages
+
+on:
+    push:
+        branches: [main]
+    workflow_dispatch:
+
+jobs:
+    build-and-deploy:
+        permissions:
+            contents: write
+
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: 1. Checkout do repositório
+              uses: actions/checkout@v4
+
+            - name: 2. Configurar o Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+                  cache: 'npm'
+
+            - name: 3. Instalar dependências (npm ci)
+              run: npm ci
+
+            - name: 4. Build do projeto Angular
+              run: npm run build -- --configuration production --base-href /
+
+            - name: 5. Deploy para a branch gh-pages
+              uses: peaceiris/actions-gh-pages@v4
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./dist/cratonsoftware.github.io
