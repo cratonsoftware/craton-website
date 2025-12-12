@@ -1,7 +1,7 @@
 {
 	"name": "cratonsoftware.github.io",
 	"version": "1.0.0",
-	"author": "CRATON | Software (cratonsoftware)",
+	"author": "CRATON Software (cratonsoftware)",
 	"homepage": "https://craton.com.br/",
 	"scripts": {
 		"ng": "ng",
