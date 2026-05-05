@@ -3,7 +3,7 @@
 	"version": 1,
 	"newProjectRoot": "projects",
 	"projects": {
-		"cratonsoftware.github.io": {
+		"craton-website": {
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
@@ -17,20 +17,13 @@
 				"build": {
 					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": "dist/cratonsoftware.github.io",
+						"outputPath": "dist/craton-website",
 						"index": "src/index.html",
 						"browser": "src/main.ts",
 						"polyfills": ["zone.js"],
 						"tsConfig": "tsconfig.app.json",
 						"inlineStyleLanguage": "scss",
-						"assets": [
-							"src/assets",
-							{
-								"glob": "CNAME",
-								"input": ".",
-								"output": "/"
-							}
-						],
+						"assets": ["src/assets", "src/robots.txt", "src/sitemap.xml"],
 						"styles": ["src/styles.scss"],
 						"scripts": []
 					},
@@ -62,10 +55,10 @@
 					"builder": "@angular-devkit/build-angular:dev-server",
 					"configurations": {
 						"production": {
-							"buildTarget": "cratonsoftware.github.io:build:production"
+							"buildTarget": "craton-website:build:production"
 						},
 						"development": {
-							"buildTarget": "cratonsoftware.github.io:build:development"
+							"buildTarget": "craton-website:build:development"
 						}
 					},
 					"defaultConfiguration": "development"

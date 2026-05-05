@@ -1,4 +1,3 @@
-/* imports */
 @use 'tailwindcss';
 
 /* set das fontes */
@@ -52,8 +51,8 @@
 
 /* personalização dos estilos tailwind css */
 @theme {
-	--font-display: 'Poppins', 'sans-serif';
-	--font-sans: 'Inter', 'sans-serif';
+	--font-inter: 'Inter', 'sans-serif';
+	--font-poppins: 'Poppins', 'sans-serif';
 
 	--color-destaque: #c2410c;
 
@@ -70,6 +69,16 @@
 	--color-dark-n2: #c7c4bf;
 	--color-dark-n3: #918d8a; /* Texto Secundário */
 	--color-dark-n4: #4d4a48;
+
+	/* Paleta CRATON Software */
+	--color-cts-destaque: #c2410c;
+	--color-cts-n0: #faf9f6;
+	--color-cts-n1: #c7c4bf;
+	--color-cts-n2: #918d8a;
+	--color-cts-n3: #6f6b68;
+	--color-cts-n4: #4d4a48;
+	--color-cts-n5: #2d2a28;
+	--color-cts-n6: #1a1716;
 }
 
 /* preset html base */
