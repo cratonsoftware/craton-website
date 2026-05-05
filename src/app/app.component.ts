@@ -7,6 +7,7 @@ import { ContatoComponent } from './features/contato/contato.component';
 import { FooterComponent } from './features/footer/footer.component';
 import { HeaderComponent } from './features/header/header.component';
 import { HeroComponent } from './features/hero/hero.component';
+import { RoadmapComponent } from './features/roadmap/roadmap.component';
 import { ServicosComponent } from './features/servicos/servicos.component';
 import { SobreComponent } from './features/sobre/sobre.component';
 import { SolucoesComponent } from './features/solucoes/solucoes.component';
@@ -15,7 +16,7 @@ import { ICON_NAMES } from './generated/icon-list';
 @Component({
 	selector: 'app-root',
 	templateUrl: './app.component.html',
-	imports: [HeaderComponent, HeroComponent, SolucoesComponent, ServicosComponent, SobreComponent, ContatoComponent, FooterComponent],
+	imports: [HeaderComponent, HeroComponent, ServicosComponent, SolucoesComponent, RoadmapComponent, SobreComponent, ContatoComponent, FooterComponent],
 })
 export class AppComponent {
 	private iconRegistry = inject(MatIconRegistry);
