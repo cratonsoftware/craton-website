@@ -51,24 +51,8 @@
 
 /* personalização dos estilos tailwind css */
 @theme {
-	--font-inter: 'Inter', 'sans-serif';
-	--font-poppins: 'Poppins', 'sans-serif';
-
-	--color-destaque: #c2410c;
-
-	/* Padrão Light */
-	--color-light-fundo: #faf9f6;
-	--color-light-n1: #918d8a;
-	--color-light-n2: #6f6b68;
-	--color-light-n3: #4d4a48; /* Texto Secundário */
-	--color-light-n4: #2d2a28; /* Texto Principal */
-
-	/* Padrão Dark */
-	--color-dark-fundo: #1a1716;
-	--color-dark-n1: #faf9f6; /* Texto Principal */
-	--color-dark-n2: #c7c4bf;
-	--color-dark-n3: #918d8a; /* Texto Secundário */
-	--color-dark-n4: #4d4a48;
+	--font-inter: 'Inter';
+	--font-poppins: 'Poppins';
 
 	/* Paleta CRATON Software */
 	--color-cts-destaque: #c2410c;
@@ -87,8 +71,8 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: var(--color-light-fundo);
-	color: var(--color-light-n3);
+	background-color: var(--color-cts-n0);
+	color: var(--color-cts-n4);
 	font-family: 'Inter', sans-serif;
 	scroll-behavior: smooth;
 }
